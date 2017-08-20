@@ -25,11 +25,14 @@ router.post('/', function(req, res) {
 
 router.put('/:id', function(req, res) {
   var condition = 'id = ' + req.params.id;
-  console.log('condition ' + condition);
-  console.log('req.body.devoured ' + req.body.devoured);
+  // console.log('condition ' + condition);
+  // console.log('req.body.devoured ' + req.body.devoured);
   burger.update({
-    devoured: req.body.devoured
-  }, condition, function() {
+    devoured: 1
+  }, {
+    where: {
+      id: req.params.id
+    }
     res.redirect('/');
   });
 });

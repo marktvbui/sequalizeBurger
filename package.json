@@ -17,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/marktvbui/sequalizeBurger/issues"
   },
-  "homepage": "https://github.com/marktvbui/sequalizeBurger#readme"
+  "homepage": "https://github.com/marktvbui/sequalizeBurger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express-handlebars": "^3.0.0",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.1",
+    "mysql2": "^1.4.1",
+    "path": "^0.12.7",
+    "sequelize": "^4.6.0"
+  },
+  "devDependencies": {}
 }
